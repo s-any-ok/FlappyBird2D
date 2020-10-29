@@ -30,7 +30,7 @@ public class Bird : MonoBehaviour
                 anim.SetTrigger("Flap");
                 //...zero out the birds current y velocity before...
                 rb2d.velocity = Vector2.zero;
-                //    new Vector2(rb2d.velocity.x, 0);
+                new Vector2(rb2d.velocity.x, 0);
                 //..giving the bird some upward force.
                 rb2d.AddForce(new Vector2(0, upBirdForce));
             }
@@ -46,7 +46,7 @@ public class Bird : MonoBehaviour
         ////...tell the Animator about it...
         anim.SetTrigger("Die");
         //...and tell the game control about it.
-        //GameControl.instance.BirdDied();
+        GameController.instance.BirdDied();
     }
 }
 
