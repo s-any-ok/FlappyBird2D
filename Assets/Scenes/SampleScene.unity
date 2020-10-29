@@ -1145,6 +1145,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2dee705e78c46ba4592b8f20acab4fd4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scoreText: {fileID: 1153751612}
   gameOvertext: {fileID: 1013786448}
   gameOver: 0
   scrollSpeed: -1.5

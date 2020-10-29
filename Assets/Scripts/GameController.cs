@@ -36,16 +36,16 @@ public class GameController : MonoBehaviour
         }
     }
 
-    //public void BirdScored()
-    //{
-    //    //The bird can't score if the game is over.
-    //    if (gameOver)
-    //        return;
-    //    //If the game is not over, increase the score...
-    //    score++;
-    //    //...and adjust the score text.
-    //    scoreText.text = "Score: " + score.ToString();
-    //}
+    public void BirdScored()
+    {
+        //The bird can't score if the game is over.
+        if (gameOver)
+            return;
+        //If the game is not over, increase the score...
+        score++;
+        //...and adjust the score text.
+        scoreText.text = "Score: " + score.ToString();
+    }
 
     public void BirdDied()
     {
