@@ -6,12 +6,12 @@ using UnityEngine.SceneManagement;
 public class GameController : MonoBehaviour
 {
     public static GameController instance;            //A reference to our game control script so we can access it statically.
-    //public Text scoreText;                        //A reference to the UI text component that displays the player's score.
+    public Text scoreText;                        //A reference to the UI text component that displays the player's score.
     public GameObject gameOvertext;                //A reference to the object that displays the text which appears when the player dies.
 
-    //private int score = 0;                        //The player's score.
+    private int score = 0;                        //The player's score.
     public bool gameOver = false;                //Is the game over?
-    //public float scrollSpeed = -1.5f;
+    public float scrollSpeed = -1.5f;
 
 
     void Awake()
